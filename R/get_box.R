@@ -1,5 +1,9 @@
 
 
+#' get_box
+#' @param location
+#' @param bbox
+#'
 get_box <- function(location,
                     bbox) {
 
@@ -7,9 +11,9 @@ get_box <- function(location,
     if (is.null(bbox)) {
       stop("Either location or bbox need to be defined!")
     }
-    box <- opq(c(xmin=bbox[1], ymin=bbox[3], xmax=bbox[2], ymax=bbox[4]))
+    box <- osmdata::opq(c(xmin=bbox[1], ymin=bbox[3], xmax=bbox[2], ymax=bbox[4]))
   } else {
-    box <- opq(bbox = location)
+    box <- osmdata::opq(bbox = location)
   }
 
   return(box)

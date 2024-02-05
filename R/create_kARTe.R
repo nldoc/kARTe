@@ -31,6 +31,8 @@
 #' @param file_units character, units specification for `file_width` and `file_height` , defaults to "cm"
 #' @param file_dpi numeric, DPI of exported file
 #'
+#' @import ggplot2
+#'
 #' @return ggplot object
 #' @details
 #' Create a kARTe plot and files
