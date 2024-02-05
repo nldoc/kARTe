@@ -32,6 +32,7 @@
 #' @param file_dpi numeric, DPI of exported file
 #'
 #' @import ggplot2
+#' @import dplyr
 #'
 #' @return ggplot object
 #' @details
