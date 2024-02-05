@@ -1,8 +1,8 @@
 
 
 #' load_gfont
-#' @param gfont_name
-#' @param gdfont_width
+#' @param gfont_name character
+#' @param gdfont_width numeric
 #'
 load_gfont <- function(gfont_name,
                        gfont_width) {

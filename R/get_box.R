@@ -1,8 +1,8 @@
 
 
 #' get_box
-#' @param location
-#' @param bbox
+#' @param location character
+#' @param bbox numeric vector (xmin, xmax, ymin, ymax)
 #'
 get_box <- function(location,
                     bbox) {

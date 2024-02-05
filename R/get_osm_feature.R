@@ -1,8 +1,8 @@
 
 #' get_osm_feature
-#' @param box
-#' @param key
-#' @param value
+#' @param box bounding box object
+#' @param key character
+#' @param value character
 #'
 
 get_osm_feature <- function(box, key, value) {

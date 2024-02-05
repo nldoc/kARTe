@@ -1,5 +1,7 @@
 
-
+#' get_palette
+#' @param palette character
+#'
 get_palette <- function(palette) {
 
   original <- c(

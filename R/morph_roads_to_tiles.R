@@ -1,5 +1,7 @@
 
-
+#' morph_roads_to_tiles
+#' @param roads roads layer
+#'
 morph_roads_to_tiles <- function(roads) {
 
   # Morph road lines to polygons by creating a. bbox polygon and splitting it into parts
