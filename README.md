@@ -57,7 +57,29 @@ create_kARTe(location = "Leipzig",
 Alternatively, a custom bounding box can be used to create the kARTe:
 
 ``` r
-## Define bounding box parameters
+## Load bounding box for a specific location:
+get_box("Göttingen") # Returns box in order ymin, xmin, ymin, ymax
+#> $bbox
+#> [1] "51.4830052,9.8001329,51.5908201,10.0536032"
+#> 
+#> $prefix
+#> [1] "[out:xml][timeout:25];\n(\n"
+#> 
+#> $suffix
+#> [1] ");\n(._;>;);\nout body;"
+#> 
+#> $features
+#> NULL
+#> 
+#> $osm_types
+#> [1] "node"     "way"      "relation"
+#> 
+#> attr(,"class")
+#> [1] "list"           "overpass_query"
+#> attr(,"nodes_only")
+#> [1] FALSE
+
+## Adjust bounding box parameters
 xmin=9.871
 xmax=9.971
 ymin=51.51

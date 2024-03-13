@@ -4,6 +4,8 @@
 #' @param location character
 #' @param bbox numeric vector (xmin, xmax, ymin, ymax)
 #'
+#' @export
+#' @return bbox object containg bounding box coordinates in the order ymin, xmin, ymax, xmax
 get_box <- function(location,
                     bbox) {
 

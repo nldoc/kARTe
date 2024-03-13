@@ -11,6 +11,9 @@ get_box(location, bbox)
 
 \item{bbox}{numeric vector (xmin, xmax, ymin, ymax)}
 }
+\value{
+bbox object containg bounding box coordinates in the order ymin, xmin, ymax, xmax
+}
 \description{
 get_box
 }

@@ -16,6 +16,7 @@ create_kARTe(
   gfont_name = "Lexend",
   gfont_width = NULL,
   gfont_size = 60,
+  axis_labels = FALSE,
   show_plot = TRUE,
   export = TRUE,
   output_dir = "",

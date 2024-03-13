@@ -78,6 +78,7 @@ create_kARTe <- function(location = NULL,
                          gfont_name = "Lexend",
                          gfont_width = NULL,
                          gfont_size = 60,
+                         axis_labels = FALSE,
                          show_plot = TRUE,
                          export = TRUE,
                          output_dir = "",
@@ -154,10 +155,15 @@ create_kARTe <- function(location = NULL,
     xlab(label) +
     theme(legend.position="none",
           axis.title.y=element_blank(),
-          axis.text=element_blank(),
-          axis.ticks=element_blank(),
           axis.title.x = element_text(hjust = 0, vjust=0, family=gfont_name, size=gfont_size),
           plot.margin = margin(t = 5, r = 5, b = 5, l = 5, unit = "mm"))
+
+  if (!axis_labels) {
+    kARTe <- kARTe +
+      theme(axis.text=element_blank(),
+            axis.ticks=element_blank())
+  }
+
 
   if (show_plot) {
     kARTe
