@@ -191,7 +191,6 @@ create_kARTe <- function(location = NULL,
   }
 
   return(kARTe)
-
 }
 
 

@@ -1,0 +1,56 @@
+---
+title: "Create a kARTe"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Create-a-kARTe}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup, eval=FALSE}
+## Install the package from github:
+remotes::install_github("https://github.com/nldoc/kARTe.git")
+```
+
+```{r load}
+## Load package
+library(kARTe)
+```
+
+```{r parameters}
+
+## Define bounding box parameters
+xmin=9.871
+xmax=9.971
+ymin=51.51
+ymax=51.57
+bbox = c(xmin, xmax, ymin, ymax)
+
+## Define edge buffer (percent values)
+## These edges will reduce the part of the bbox that is shown in the final picture
+## This ensures that cut-off roads and other artifacts are removed from the final frame
+edge_buffer = c(0.01, 0.005)
+```
+
+```{r create, fig.dim=c(7,7)}
+create_kARTe(bbox = bbox,
+             edge_buffer = edge_buffer,
+             color_palette = "original",
+             color_water = "black",
+             roads_linewidth = 0.3,
+             river_linewidth = 0.3,
+             label = "GÖTTINGEN",
+             gfont_name = "Lexend",
+             gfont_size = 14,
+             export = FALSE,
+             output_dir = "/Users/jan/Rproj/goemap/maps",
+             filename = "map")
+
+```
