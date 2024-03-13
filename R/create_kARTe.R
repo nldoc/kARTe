@@ -13,7 +13,7 @@
 #' @param river_linewidth numeric value, river linewidth in plot
 #' @param roads_linewidth numeric value, roads linewidth in plot
 #' @param color_palette charatcer, name of the color palette.
-#' Choices are currently: "original", "blend", "synth". Alternatively,
+#' Choices are currently: "original", "blend", "synth".
 #' Optionally, a vector with colors can be passed
 #' @param color_water character, single color for water
 #' @param label character, label to put below the plotting area

@@ -43,7 +43,7 @@ Map will be clipped by defined buffers before plotting.}
 \item{roads_linewidth}{numeric value, roads linewidth in plot}
 
 \item{color_palette}{charatcer, name of the color palette.
-Choices are currently: "original", "blend", "synth". Alternatively,
+Choices are currently: "original", "blend", "synth".
 Optionally, a vector with colors can be passed}
 
 \item{color_water}{character, single color for water}
